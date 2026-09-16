@@ -16,6 +16,9 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -27,8 +30,17 @@ body {
   background-color: var(--bg-canvas);
   transition: background-color var(--transition-base), color var(--transition-base);
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html.drawer-open,
+body.drawer-open {
+  overflow: hidden !important;
+  touch-action: none;
 }
 
 /* Media Elements */
@@ -193,6 +205,10 @@ p:last-child {
 .grid {
   display: grid;
   gap: 2rem;
+}
+
+.grid > * {
+  min-width: 0;
 }
 
 .grid-cols-2 {

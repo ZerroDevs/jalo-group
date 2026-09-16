@@ -88,6 +88,8 @@
 
 .btn-block {
   width: 100%;
+  white-space: normal;
+  text-align: center;
 }
 
 .btn-icon-only {
@@ -155,10 +157,31 @@
   right: 0;
   height: 4px;
   background-color: var(--brand-navy);
+  z-index: 2;
 }
 
 .card:hover .card-top-accent {
   background-color: var(--brand-orange);
+}
+
+/* Card Media (Service & Feature Visuals) */
+.card-media {
+  position: relative;
+  height: 190px;
+  margin: -1.75rem -1.75rem 1.25rem -1.75rem;
+  overflow: hidden;
+  background-color: var(--bg-surface-elevated);
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.card:hover .card-media img {
+  transform: scale(1.05);
 }
 
 /* Icon Box */
@@ -631,7 +654,10 @@ textarea.form-control {
     font-size: 1.15rem;
   }
   .card {
-    padding: 1.25rem;
+    padding: 1.25rem !important;
+  }
+  .btn {
+    white-space: normal;
   }
   .btn-lg {
     padding: 0.85rem 1.4rem;

@@ -54,7 +54,8 @@ export class NavigationManager {
     if (this.mobileDrawer && this.mobileOverlay) {
       this.mobileDrawer.classList.add('active');
       this.mobileOverlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
+      document.documentElement.classList.add('drawer-open');
+      document.body.classList.add('drawer-open');
     }
   }
 
@@ -62,7 +63,8 @@ export class NavigationManager {
     if (this.mobileDrawer && this.mobileOverlay) {
       this.mobileDrawer.classList.remove('active');
       this.mobileOverlay.classList.remove('active');
-      document.body.style.overflow = '';
+      document.documentElement.classList.remove('drawer-open');
+      document.body.classList.remove('drawer-open');
     }
   }
 

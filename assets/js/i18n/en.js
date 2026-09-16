@@ -104,6 +104,18 @@ export const en = {
   "service.turnkey.title": "Industrial Turnkey Services",
   "service.turnkey.desc": "End-to-end EPC project execution, manifold installations, separation facility construction, and complete plant commissioning.",
 
+  // Services Field Operations Showcase
+  "services.showcase.tag": "Operational Field Excellence",
+  "services.showcase.title": "Integrated Field Operations & Rapid Desert Mobilization",
+  "services.showcase.desc": "With our branded operational fleet, certified Libyan petroleum engineers, and rapid-dispatch logistics hub, Jalo Group delivers round-the-clock technical support directly to wellheads, manifolds, and processing stations across the Sirte, Murzuq, and Ghadames basins.",
+  "services.showcase.item1_title": "24/7 Rapid Desert Mobilization Fleet",
+  "services.showcase.item1_desc": "Heavy-duty 4x4 utility trucks equipped with onboard tooling, diagnostic kits, and safety gear ready for emergency dispatch.",
+  "services.showcase.item2_title": "Certified Multi-Disciplinary Libyan Crews",
+  "services.showcase.item2_desc": "Experienced engineers and technicians certified in well intervention, mechanical turnaround, and high-pressure manifold servicing.",
+  "services.showcase.item3_title": "NOC Approved Field Workflows",
+  "services.showcase.item3_desc": "Strict adherence to National Oil Corporation safety directives, PTW protocols, and environmental containment across all operational sites.",
+  "services.showcase.badge": "11 Specialized Disciplines",
+
   // HSE Highlights (Home & HSE page)
   "hse.tag": "Health, Safety & Environment",
   "hse.title": "Uncompromising Safety: Goal Zero Target",
@@ -123,6 +135,14 @@ export const en = {
   "hse.pillar_qaqc.desc": "ISO-certified quality control protocols, non-destructive testing (NDT), and calibrated measurement standards.",
   "hse.pillar_compliance.title": "Regulatory Compliance",
   "hse.pillar_compliance.desc": "Total adherence to Libyan National Oil Corporation (NOC) safety directives, API standards, and OSHA guidelines.",
+  "hse.qaqc_showcase.tag": "Technical Quality Assurance",
+  "hse.qaqc_showcase.title": "Rigorous Quality Verification & NDT Examination",
+  "hse.qaqc_showcase.desc": "At Jalo Group, quality is engineered into every weld seam, flowline flange, and valve assembly. Our certified QA/QC inspectors deploy advanced non-destructive examination (NDT), ultrasonic flaw detection, and calibrated metallurgical testing directly in Libyan field workshops and onshore operational sites.",
+  "hse.qaqc_showcase.item1_title": "ISO 9001:2015 Certified QA/QC Workflow",
+  "hse.qaqc_showcase.item1_desc": "Full material traceability, hydrotesting verification records, and calibration compliance for all installed components.",
+  "hse.qaqc_showcase.item2_title": "Calibrated Digital Ultrasonic & NDT Testing",
+  "hse.qaqc_showcase.item2_desc": "Certified ASNT / PCN Level II inspectors verifying weld penetration and metallurgical sound ratings before commissioning.",
+  "hse.qaqc_showcase.badge": "100% Traceable QA/QC",
 
   // Projects (Showcase)
   "projects.tag": "Field Experiences",
@@ -182,6 +202,14 @@ export const en = {
   "cert.cr": "Commercial & Chamber Registration",
   "cert.cr_sub": "Full Legal Compliance & Ministry Licenses",
   "cert.cr_desc": "Licensed by the Libyan Ministry of Oil & Gas and the Chamber of Commerce, Industry and Agriculture.",
+  "cert.showcase.tag": "Audited Quality Standards",
+  "cert.showcase.title": "ISO 9001, 14001, 45001 & NOC Certified Systems",
+  "cert.showcase.desc": "Every project executed by Jalo Group conforms to accredited international quality and safety benchmarks, verified through regular third-party audits and rigorous National Oil Corporation technical categorizations.",
+  "cert.showcase.item1_title": "Complete Material Traceability",
+  "cert.showcase.item1_desc": "Full Mill Test Certificates (MTC 3.1/3.2) and ultrasonic NDT flaw testing records for all installed pressure components.",
+  "cert.showcase.item2_title": "Audited Environmental & OH&S Protocols",
+  "cert.showcase.item2_desc": "Systematic compliance audits meeting ISO 14001 ecological containment and ISO 45001 Goal Zero standards.",
+  "cert.showcase.badge": "Audited & Certified",
 
   // Contact Page
   "contact.tag": "Operational Inquiries",
@@ -202,6 +230,16 @@ export const en = {
   "contact.hours_title": "Operational Availability",
   "contact.hours_val": "Corporate: Sun - Thu 08:00 - 17:00 | Field Dispatch: 24/7/365",
   "contact.speak_cta": "Speak with the JALO GROUP Team",
+  "contact.showcase.tag": "24/7 Operations Hub",
+  "contact.showcase.title": "Integrated Field Coordination & Emergency Dispatch",
+  "contact.showcase.desc": "Our centralized operations desk bridges communication between corporate offices in Tripoli and Benghazi and remote onshore teams across the Sirte and Murzuq basins, ensuring immediate mobilization and seamless service execution.",
+  "contact.showcase.item1_title": "Instant Emergency Mobilization",
+  "contact.showcase.item1_desc": "Immediate dispatch capability for wellhead interventions, critical valve repairs, and unplanned field outages.",
+  "contact.showcase.item2_title": "Direct Satcom & Basin Coordination",
+  "contact.showcase.item2_desc": "Continuous satellite and radio connectivity maintaining continuous contact with remote desert field crews.",
+  "contact.showcase.item3_title": "Dedicated Procurement & Spares Liaison",
+  "contact.showcase.item3_desc": "Expedited customs clearance and logistics corridors for urgent API 6D valves and mechanical components.",
+  "contact.showcase.badge": "24/7/365 Dispatch",
 
   // Quote Modal & Form
   "quote.modal_title": "Request a Technical Service Quote",
@@ -222,7 +260,7 @@ export const en = {
   "quote.scope_ph": "Please provide project timeline, equipment specifications, required personnel, or milestone targets...",
   "quote.files": "Attach Specification Documents (Simulated)",
   "quote.files_hint": "Click or drag technical sheets, SOW, or BOQ files (PDF, DWG, XLSX)",
-  "quote.submit": "Submit Quote Request (Send to Official Email)",
+  "quote.submit": "Submit Quote Request",
   "quote.copy": "Copy Payload to Clipboard",
   "quote.success_title": "Quote Request Structured Successfully!",
   "quote.success_desc": "A pre-filled email has been launched for your default email client. You may also copy the structured technical payload below to send via WhatsApp or official portal:",

@@ -45,6 +45,8 @@
 
 [dir="rtl"] .mobile-drawer.active {
   transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 [dir="rtl"] .drawer-link .drawer-chevron {
