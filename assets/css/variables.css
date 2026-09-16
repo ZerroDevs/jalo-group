@@ -1,0 +1,127 @@
+/* ==========================================================================
+   JALO GROUP for Oil & Gas Services - Design System & Variables
+   Strict Brand Palette: Flame Orange, Corporate Navy, Industrial Slate
+   NO PURPLE, VIOLET, PINK, OR MAGENTA
+   NO BACKGROUND GRADIENTS on key visual areas (Solid enterprise colors & frosted panels only)
+   ========================================================================== */
+
+:root {
+  /* Brand Core Tokens (Extracted accurately from Jalo Group Logo) */
+  --brand-orange: #FF7A00;
+  --brand-orange-hover: #F56000;
+  --brand-orange-dark: #D44E00;
+  --brand-amber: #FFA726;
+  
+  --brand-navy: #0B4F8A;
+  --brand-navy-dark: #003B73;
+  --brand-navy-deep: #00264D;
+  --brand-navy-light: #1A6BB5;
+  
+  --brand-slate: #1B2A38;
+  --brand-slate-dark: #121D27;
+  
+  /* Status Colors - Strictly standard enterprise tokens */
+  --color-success: #15803D;
+  --color-success-bg: #DCFCE7;
+  --color-warning: #B45309;
+  --color-warning-bg: #FEF3C7;
+  --color-danger: #B91C1C;
+  --color-danger-bg: #FEE2E2;
+  --color-info: #0369A1;
+  --color-info-bg: #E0F2FE;
+
+  /* Typography Stacks */
+  --font-sans-en: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-sans-ar: 'Cairo', 'Alexandria', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif;
+  --font-family: var(--font-sans-en);
+  
+  /* Layout Dimensions */
+  --header-height: 80px;
+  --topbar-height: 40px;
+  --container-max-width: 1280px;
+  --container-padding: 1.5rem;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 0.18s ease-in-out;
+  --transition-base: 0.28s ease-in-out;
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --------------------------------------------------------------------------
+   LIGHT THEME (Default or Selected)
+   -------------------------------------------------------------------------- */
+:root[data-theme="light"] {
+  /* Solid Surface & Canvas Colors - NO GRADIENTS */
+  --bg-canvas: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #F1F5F9;
+  --bg-surface-muted: #E2E8F0;
+  --bg-hero: #002B52; /* Deep corporate navy solid for hero */
+  --bg-hero-text: #FFFFFF;
+  --bg-footer: #0F1720;
+  --bg-footer-card: #18222D;
+
+  /* Text & Typography */
+  --text-primary: #0F1720;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-inverse: #FFFFFF;
+  --text-on-brand: #FFFFFF;
+
+  /* Borders & Dividers */
+  --border-light: #E2E8F0;
+  --border-medium: #CBD5E1;
+  --border-brand: #0B4F8A;
+
+  /* Shadows - Subtle enterprise elevation */
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 32, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 32, 0.08), 0 2px 4px -2px rgba(15, 23, 32, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 32, 0.1), 0 4px 6px -4px rgba(15, 23, 32, 0.06);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 32, 0.12), 0 8px 10px -6px rgba(15, 23, 32, 0.08);
+
+  /* Overlays & Panels */
+  --overlay-backdrop: rgba(15, 23, 32, 0.65);
+  --panel-frosted: rgba(255, 255, 255, 0.95);
+}
+
+/* --------------------------------------------------------------------------
+   DARK THEME
+   -------------------------------------------------------------------------- */
+:root[data-theme="dark"] {
+  /* Solid Surface & Canvas Colors - NO GRADIENTS */
+  --bg-canvas: #0B1118;
+  --bg-surface: #111A24;
+  --bg-surface-elevated: #182330;
+  --bg-surface-muted: #223040;
+  --bg-hero: #080D14; /* Pure solid enterprise dark */
+  --bg-hero-text: #FFFFFF;
+  --bg-footer: #070B0F;
+  --bg-footer-card: #0F1720;
+
+  /* Text & Typography */
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-inverse: #0F1720;
+  --text-on-brand: #FFFFFF;
+
+  /* Borders & Dividers */
+  --border-light: #243345;
+  --border-medium: #33465C;
+  --border-brand: #FF7A00;
+
+  /* Shadows - Dark Mode Depth */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.7), 0 8px 10px -6px rgba(0, 0, 0, 0.6);
+
+  /* Overlays & Panels */
+  --overlay-backdrop: rgba(7, 11, 15, 0.85);
+  --panel-frosted: rgba(17, 26, 36, 0.95);
+}

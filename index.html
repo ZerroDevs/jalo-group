@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JALO GROUP — Integrated Solutions for the Oil & Gas Industry</title>
+  <meta name="description" content="Jalo Group provides premier engineering, drilling support, maintenance, and heavy logistics services across Libya's oil and gas basins with uncompromising safety.">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, Cairo, Alexandria -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Pro Vector Icons (Zero Emojis Policy) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Modular CSS Architecture -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-info">
+        <span class="topbar-item">
+          <i class="fa-solid fa-phone-volume"></i>
+          <a href="tel:+218213608400" data-i18n="topbar.emergency">24/7 Operations Support: +218 (21) 360-8400</a>
+        </span>
+        <span class="topbar-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:inquiry@jalogroup.ly" data-i18n="topbar.email">inquiry@jalogroup.ly</a>
+        </span>
+        <span class="topbar-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span data-i18n="topbar.location">Tripoli, Libya</span>
+        </span>
+      </div>
+      <div class="topbar-status">
+        <span class="topbar-status-dot"></span>
+        <span data-i18n="topbar.status">Libyan NOC Qualified Vendor</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Site Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Jalo Group Home">
+        <img src="assets/images/logo.jpeg" alt="Jalo Group for Oil & Gas Services Logo" class="brand-logo-img">
+        <div class="brand-logo-text">
+          <span class="brand-name" data-i18n="brand.name">JALO GROUP</span>
+          <span class="brand-tagline" data-i18n="brand.tagline">For Oil & Gas Services</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">About Us</a>
+        <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+        <a href="hse.html" class="nav-link" data-i18n="nav.hse">HSE & Quality</a>
+        <a href="projects.html" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="certifications.html" class="nav-link" data-i18n="nav.certifications">Certifications</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact Us</a>
+      </nav>
+
+      <!-- Utility Controls -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="btn-control btn-theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Language Switcher -->
+        <button class="btn-control btn-lang-toggle" aria-label="Switch Language" title="Switch Language">
+          <i class="fa-solid fa-globe"></i>
+          <span class="lang-label">عربي</span>
+        </button>
+
+        <!-- CTA Button -->
+        <button class="btn btn-primary btn-sm btn-open-quote" data-i18n="nav.quote">
+          <i class="fa-solid fa-file-invoice"></i> Request a Quote
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="btn-mobile-menu" id="mobileMenuToggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="assets/images/logo.jpeg" alt="Jalo Group" class="brand-logo-img" style="height: 38px;">
+        <span class="brand-name" style="font-size: 1.15rem;" data-i18n="brand.name">JALO GROUP</span>
+      </div>
+      <button class="modal-close-btn" id="drawerCloseBtn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="drawer-body">
+      <nav class="drawer-nav">
+        <a href="index.html" class="drawer-link active">
+          <i class="fa-solid fa-house"></i>
+          <span data-i18n="nav.home">Home</span>
+        </a>
+        <a href="about.html" class="drawer-link">
+          <i class="fa-solid fa-building"></i>
+          <span data-i18n="nav.about">About Us</span>
+        </a>
+        <a href="services.html" class="drawer-link">
+          <i class="fa-solid fa-gears"></i>
+          <span data-i18n="nav.services">Services</span>
+        </a>
+        <a href="hse.html" class="drawer-link">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span data-i18n="nav.hse">HSE & Quality</span>
+        </a>
+        <a href="projects.html" class="drawer-link">
+          <i class="fa-solid fa-diagram-project"></i>
+          <span data-i18n="nav.projects">Projects</span>
+        </a>
+        <a href="certifications.html" class="drawer-link">
+          <i class="fa-solid fa-certificate"></i>
+          <span data-i18n="nav.certifications">Certifications</span>
+        </a>
+        <a href="contact.html" class="drawer-link">
+          <i class="fa-solid fa-headset"></i>
+          <span data-i18n="nav.contact">Contact Us</span>
+        </a>
+      </nav>
+      <div class="drawer-actions">
+        <button class="btn btn-primary btn-block btn-open-quote" data-i18n="nav.quote">
+          <i class="fa-solid fa-file-invoice"></i> Request a Quote
+        </button>
+        <div style="display: flex; gap: 0.5rem;">
+          <button class="btn-control btn-lang-toggle" style="flex: 1;">
+            <i class="fa-solid fa-globe"></i>
+            <span class="lang-label">عربي</span>
+          </button>
+          <button class="btn-control btn-theme-toggle" style="flex: 1;">
+            <i class="fa-solid fa-moon"></i>
+            <span data-i18n="nav.theme_toggle">Theme</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="assets/images/hero-oilfield.jpg" alt="Libyan Oilfield Drilling Rig at Sunset">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-tag" data-i18n="hero.tag">Excellence in Libyan Energy Operations</span>
+        <h1 class="hero-title" data-i18n="hero.title">
+          JALO GROUP — Integrated Solutions for the <span>Oil & Gas</span> Industry
+        </h1>
+        <p class="hero-desc" data-i18n="hero.desc">
+          Delivering reliable, top-tier engineering, technical, and operational services tailored to Libya’s energy sector with uncompromising safety and precision.
+        </p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn btn-primary btn-lg" data-i18n="hero.cta_services">
+            <i class="fa-solid fa-compass"></i> Explore Services
+          </a>
+          <button class="btn btn-outline-white btn-lg btn-open-quote" data-i18n="hero.cta_quote">
+            <i class="fa-solid fa-file-signature"></i> Request a Quote
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Operational Metrics -->
+  <section class="stats-banner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-i18n="stat.experience_num">15+</span>
+          <span class="stat-label" data-i18n="stat.experience">Years in Libyan Basins</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-i18n="stat.safety_num">99.8%</span>
+          <span class="stat-label" data-i18n="stat.safety">Safety Compliance Record</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-i18n="stat.projects_num">140+</span>
+          <span class="stat-label" data-i18n="stat.projects">Completed Field Contracts</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-i18n="stat.disciplines_num">11</span>
+          <span class="stat-label" data-i18n="stat.disciplines">Specialized Service Disciplines</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Jalo Group (Value Proposition Matrix) -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="why.tag">Value Proposition</span>
+        <h2 class="section-title" data-i18n="why.title">Why Partner with JALO GROUP?</h2>
+        <p class="section-subtitle" data-i18n="why.subtitle">
+          A strategic partner delivering unwavering reliability, technical mastery, and long-term execution excellence across Libya's onshore and offshore assets.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-3">
+        <!-- Pillar 1: Reliability -->
+        <div class="card pillar-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <h3 class="pillar-title" data-i18n="pillar.reliability.title">Reliability</h3>
+          <p data-i18n="pillar.reliability.desc">
+            Unwavering commitment to project milestones, operational schedules, and rigorous execution standards under harsh desert field conditions.
+          </p>
+        </div>
+
+        <!-- Pillar 2: Technical Capacity & Expertise -->
+        <div class="card pillar-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h3 class="pillar-title" data-i18n="pillar.expertise.title">Technical Capacity & Expertise</h3>
+          <p data-i18n="pillar.expertise.desc">
+            High-caliber specialized petroleum engineers, certified field technicians, and modern heavy machinery built for severe-duty energy operations.
+          </p>
+        </div>
+
+        <!-- Pillar 3: Safety First -->
+        <div class="card pillar-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-helmet-safety"></i>
+          </div>
+          <h3 class="pillar-title" data-i18n="pillar.safety.title">Safety First</h3>
+          <p data-i18n="pillar.safety.desc">
+            HSE is an innate culture, not an afterthought. Zero-harm target with proactive hazard mitigation and continuous field safety drills.
+          </p>
+        </div>
+
+        <!-- Pillar 4: Quality Assurance -->
+        <div class="card pillar-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3 class="pillar-title" data-i18n="pillar.quality.title">Quality Assurance</h3>
+          <p data-i18n="pillar.quality.desc">
+            Meticulous attention to detail and adherence to international API, ASME, and ISO standards across all technical deliverables.
+          </p>
+        </div>
+
+        <!-- Pillar 5: Libyan Market Mastery -->
+        <div class="card pillar-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <h3 class="pillar-title" data-i18n="pillar.market.title">Libyan Market Mastery</h3>
+          <p data-i18n="pillar.market.desc">
+            Deep operational knowledge of Libya's geological basins, desert logistics, Sirte and Murzuq operating terrain, and regulatory framework.
+          </p>
+        </div>
+
+        <!-- Pillar 6: Long-Term Partnership -->
+        <div class="card pillar-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3 class="pillar-title" data-i18n="pillar.partnership.title">Long-Term Partnership</h3>
+          <p data-i18n="pillar.partnership.desc">
+            Building strategic, multi-year relationships with operators and NOC subsidiaries, serving as an indispensable operational ally.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Services Grid (Overview of 11 Disciplines) -->
+  <section class="section section-bg-elevated">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="services.tag">Comprehensive Capabilities</span>
+        <h2 class="section-title" data-i18n="services.title">Specialized Energy & Field Services</h2>
+        <p class="section-subtitle" data-i18n="services.subtitle">
+          Full-spectrum engineering, maintenance, drilling support, and turnkey solutions engineered to maximize asset uptime and operational efficiency.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-3">
+        <!-- 1. Oil & Gas Field Services -->
+        <div class="card service-card">
+          <div class="card-top-accent"></div>
+          <div class="icon-box"><i class="fa-solid fa-oil-well"></i></div>
+          <h3 class="service-card-title" data-i18n="service.field.title">Oil & Gas Field Services</h3>
+          <p class="service-card-desc" data-i18n="service.field.desc">
+            Comprehensive site preparation, flowline management, wellhead surface maintenance, and onshore field support.
+          </p>
+          <div class="service-card-footer">
+            <a href="services.html#service-field" class="service-link">
+              <span data-i18n="services.learn_more">Technical Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button class="btn btn-outline btn-sm btn-open-quote" data-service="Oil & Gas Field Services" data-i18n="nav.quote">Quote</button>
+          </div>
+        </div>
+
+        <!-- 2. Drilling Support Services -->
+        <div class="card service-card">
+          <div class="card-top-accent"></div>
+          <div class="icon-box"><i class="fa-solid fa-bore-hole"></i></div>
+          <h3 class="service-card-title" data-i18n="service.drilling.title">Drilling Support Services</h3>
+          <p class="service-card-desc" data-i18n="service.drilling.desc">
+            Rig mobilization, mud logging support, directional drilling equipment handling, and rig site utility systems.
+          </p>
+          <div class="service-card-footer">
+            <a href="services.html#service-drilling" class="service-link">
+              <span data-i18n="services.learn_more">Technical Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button class="btn btn-outline btn-sm btn-open-quote" data-service="Drilling Support Services" data-i18n="nav.quote">Quote</button>
+          </div>
+        </div>
+
+        <!-- 3. Well Maintenance & Completion -->
+        <div class="card service-card">
+          <div class="card-top-accent"></div>
+          <div class="icon-box"><i class="fa-solid fa-wrench"></i></div>
+          <h3 class="service-card-title" data-i18n="service.well.title">Well Maintenance & Completion</h3>
+          <p class="service-card-desc" data-i18n="service.well.desc">
+            Well workover support, slickline, casing inspection, and artificial lift maintenance to optimize reservoir productivity.
+          </p>
+          <div class="service-card-footer">
+            <a href="services.html#service-well" class="service-link">
+              <span data-i18n="services.learn_more">Technical Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button class="btn btn-outline btn-sm btn-open-quote" data-service="Well Maintenance & Completion" data-i18n="nav.quote">Quote</button>
+          </div>
+        </div>
+
+        <!-- 4. Mechanical Overhaul & Maintenance -->
+        <div class="card service-card">
+          <div class="card-top-accent"></div>
+          <div class="icon-box"><i class="fa-solid fa-gears"></i></div>
+          <h3 class="service-card-title" data-i18n="service.mechanical.title">Mechanical Overhaul & Maintenance</h3>
+          <p class="service-card-desc" data-i18n="service.mechanical.desc">
+            Turbine inspection, compressor overhauls, centrifugal pump rebuilds, heat exchanger servicing, and plant turnaround support.
+          </p>
+          <div class="service-card-footer">
+            <a href="services.html#service-mechanical" class="service-link">
+              <span data-i18n="services.learn_more">Technical Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button class="btn btn-outline btn-sm btn-open-quote" data-service="Mechanical Overhaul & Maintenance" data-i18n="nav.quote">Quote</button>
+          </div>
+        </div>
+
+        <!-- 5. Electrical & Power Systems -->
+        <div class="card service-card">
+          <div class="card-top-accent"></div>
+          <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+          <h3 class="service-card-title" data-i18n="service.electrical.title">Electrical & Power Systems</h3>
+          <p class="service-card-desc" data-i18n="service.electrical.desc">
+            High-voltage switchgear testing, oilfield generator maintenance, substations, motor control centers (MCC), and solar hybrid setups.
+          </p>
+          <div class="service-card-footer">
+            <a href="services.html#service-electrical" class="service-link">
+              <span data-i18n="services.learn_more">Technical Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button class="btn btn-outline btn-sm btn-open-quote" data-service="Electrical & Power Systems" data-i18n="nav.quote">Quote</button>
+          </div>
+        </div>
+
+        <!-- 6. Instrumentation, Automation & Control -->
+        <div class="card service-card">
+          <div class="card-top-accent"></div>
+          <div class="icon-box"><i class="fa-solid fa-sliders"></i></div>
+          <h3 class="service-card-title" data-i18n="service.instrumentation.title">Instrumentation, Automation & Control</h3>
+          <p class="service-card-desc" data-i18n="service.instrumentation.desc">
+            SCADA systems, PLC programming, calibration of pressure/flow transmitters, ESD systems, and distributed control systems (DCS).
+          </p>
+          <div class="service-card-footer">
+            <a href="services.html#service-instrumentation" class="service-link">
+              <span data-i18n="services.learn_more">Technical Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button class="btn btn-outline btn-sm btn-open-quote" data-service="Instrumentation & Control" data-i18n="nav.quote">Quote</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="services.html" class="btn btn-primary btn-lg">
+          <span data-i18n="services.view_all">View All 11 Services</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HSE & Quality Focus Feature -->
+  <section class="section section-bg-dark">
+    <div class="container">
+      <div class="story-grid">
+        <div>
+          <span class="hse-hero-badge" data-i18n="hse.badge">HSE Certified & Compliant</span>
+          <h2 style="color: #FFFFFF; font-size: clamp(1.85rem, 3vw + 0.5rem, 2.75rem); margin-bottom: 1.25rem;" data-i18n="hse.title">
+            Uncompromising Safety: Goal Zero Target
+          </h2>
+          <p style="color: #CBD5E1; font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;" data-i18n="hse.subtitle">
+            We believe operational excellence is unattainable without absolute commitment to human life, ecological preservation, and field integrity.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: flex-start; gap: 0.85rem;">
+              <i class="fa-solid fa-shield-check" style="color: var(--brand-orange); font-size: 1.3rem; margin-top: 0.2rem;"></i>
+              <div>
+                <strong style="color: #FFFFFF; display: block; margin-bottom: 0.2rem;" data-i18n="hse.pillar_crew.title">Employee & Crew Welfare</strong>
+                <span style="color: #94A3B8; font-size: 0.92rem;" data-i18n="hse.pillar_crew.desc">Rigorous medical screenings, certified PPE, desert heat stress prevention, and mental wellness programs.</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 0.85rem;">
+              <i class="fa-solid fa-triangle-exclamation" style="color: var(--brand-orange); font-size: 1.3rem; margin-top: 0.2rem;"></i>
+              <div>
+                <strong style="color: #FFFFFF; display: block; margin-bottom: 0.2rem;" data-i18n="hse.pillar_risk.title">Active Risk Assessment (HAZID/HAZOP)</strong>
+                <span style="color: #94A3B8; font-size: 0.92rem;" data-i18n="hse.pillar_risk.desc">Formal risk matrices and dynamic Job Safety Analysis (JSA) executed prior to any physical field operation.</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 0.85rem;">
+              <i class="fa-solid fa-leaf" style="color: var(--brand-orange); font-size: 1.3rem; margin-top: 0.2rem;"></i>
+              <div>
+                <strong style="color: #FFFFFF; display: block; margin-bottom: 0.2rem;" data-i18n="hse.pillar_env.title">Environmental Protection</strong>
+                <span style="color: #94A3B8; font-size: 0.92rem;" data-i18n="hse.pillar_env.desc">Strict containment protocols, zero chemical seepage policy, and full desert habitat rehabilitation programs.</span>
+              </div>
+            </div>
+          </div>
+          <a href="hse.html" class="btn btn-primary">
+            <span data-i18n="nav.hse">Explore HSE Protocols</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="story-img-box">
+          <img src="assets/images/hse-safety.jpg" alt="Jalo Group HSE Safety Assessment in Field">
+          <div class="story-badge-stat">
+            <span class="story-badge-num">100%</span>
+            <span class="story-badge-label" data-i18n="hse.goal_zero.title">Goal Zero Target</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Preview -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="projects.tag">Field Experiences</span>
+        <h2 class="section-title" data-i18n="projects.title">Proven Track Record in Libyan Basins</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">
+          Delivering complex infrastructure, well maintenance, and logistical support across Sirte, Murzuq, Ghadames, and Coastal Terminals.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-3">
+        <!-- Project 1: Sirte Flowlines -->
+        <div class="card project-card">
+          <div class="project-card-image">
+            <span class="badge badge-orange project-card-badge">Sirte Basin</span>
+            <img src="assets/images/hero-oilfield.jpg" alt="Sirte Flowlines Project">
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Sirte Basin Flowlines Rehabilitation</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              Hydrotesting and section replacement across 42 kilometers of 8-inch crude flowlines under desert operating conditions.
+            </p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item">
+                <span class="project-meta-label">Client</span>
+                <span class="project-meta-val">Major NOC Joint Venture</span>
+              </div>
+              <div class="project-meta-item">
+                <span class="project-meta-label">Outcome</span>
+                <span class="project-meta-val">Zero LTI / 28K BOPD</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-block btn-sm btn-project-detail" data-project-id="sirte-flowlines">
+              <span data-i18n="projects.view_details">Project Scope & Data</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: Murzuq Power -->
+        <div class="card project-card">
+          <div class="project-card-image">
+            <span class="badge badge-orange project-card-badge">Murzuq Basin</span>
+            <img src="assets/images/engineer-ppe.jpg" alt="Murzuq Power Overhaul">
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">High-Voltage Switchgear & Power Gen</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              Maintenance and relay calibration for 33kV gas turbine power generation units with automated SCADA integration.
+            </p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item">
+                <span class="project-meta-label">Client</span>
+                <span class="project-meta-val">Southwestern Consortium</span>
+              </div>
+              <div class="project-meta-item">
+                <span class="project-meta-label">Outcome</span>
+                <span class="project-meta-val">100% Stability</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-block btn-sm btn-project-detail" data-project-id="murzuq-power">
+              <span data-i18n="projects.view_details">Project Scope & Data</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3: Heavy Logistics Fleet -->
+        <div class="card project-card">
+          <div class="project-card-image">
+            <span class="badge badge-orange project-card-badge">Waha Basin</span>
+            <img src="assets/images/heavy-equipment.jpg" alt="Drilling Rig Mobilization Logistics">
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Drilling Rig Mobilization Fleet</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              Turnkey rig moving convoys involving 2,000 HP heavy rigs, multi-axle desert prime movers, and rough terrain cranes.
+            </p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item">
+                <span class="project-meta-label">Client</span>
+                <span class="project-meta-val">National Drilling Operator</span>
+              </div>
+              <div class="project-meta-item">
+                <span class="project-meta-label">Outcome</span>
+                <span class="project-meta-val">45+ Moves / 0 Downtime</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-block btn-sm btn-project-detail" data-project-id="waha-rig-logistics">
+              <span data-i18n="projects.view_details">Project Scope & Data</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="projects.html" class="btn btn-navy btn-lg">
+          <span data-i18n="projects.title">View All Project Records</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="section section-sm" style="background-color: var(--brand-slate-dark); border-top: 2px solid var(--brand-orange);">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+      <div style="max-width: 680px;">
+        <h2 style="color: #FFFFFF; font-size: 1.85rem; margin-bottom: 0.5rem;" data-i18n="cta.banner_title">Ready to Optimize Your Oilfield Operations?</h2>
+        <p style="color: #CBD5E1; margin: 0;" data-i18n="cta.banner_desc">
+          Contact our engineering dispatch today to discuss scheduled maintenance, emergency rig mobilization, or turnkey industrial solutions in Libya.
+        </p>
+      </div>
+      <div>
+        <button class="btn btn-primary btn-lg btn-open-quote" data-i18n="cta.banner_btn">
+          <i class="fa-solid fa-file-signature"></i> Request a Comprehensive Quote
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 0.5rem;">
+            <img src="assets/images/logo.jpeg" alt="Jalo Group" class="brand-logo-img" style="height: 44px;">
+            <div class="brand-logo-text">
+              <span class="brand-name" style="color: #FFFFFF;" data-i18n="brand.name">JALO GROUP</span>
+              <span class="brand-tagline" data-i18n="brand.tagline">For Oil & Gas Services</span>
+            </div>
+          </div>
+          <p data-i18n="footer.desc">
+            Jalo Group for Oil & Gas Services is a premier Libyan oilfield solutions provider, delivering integrated engineering, maintenance, drilling support, and heavy logistics with uncompromising safety and precision.
+          </p>
+          <div class="footer-socials">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:inquiry@jalogroup.ly" class="footer-social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.quick_links">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav.home">Home</span></a></li>
+            <li><a href="about.html" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav.about">About Us</span></a></li>
+            <li><a href="services.html" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav.services">Services</span></a></li>
+            <li><a href="hse.html" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav.hse">HSE & Quality</span></a></li>
+            <li><a href="projects.html" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav.projects">Projects</span></a></li>
+            <li><a href="certifications.html" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav.certifications">Certifications</span></a></li>
+            <li><a href="contact.html" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav.contact">Contact Us</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Core Disciplines -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.services_dir">Service Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#service-field" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="service.field.title">Oil & Gas Field Services</span></a></li>
+            <li><a href="services.html#service-drilling" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="service.drilling.title">Drilling Support</span></a></li>
+            <li><a href="services.html#service-well" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="service.well.title">Well Maintenance</span></a></li>
+            <li><a href="services.html#service-mechanical" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="service.mechanical.title">Mechanical Overhaul</span></a></li>
+            <li><a href="services.html#service-electrical" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="service.electrical.title">Electrical & Power</span></a></li>
+            <li><a href="services.html#service-instrumentation" class="footer-link"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="service.instrumentation.title">Automation & Control</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Point -->
+        <div>
+          <h4 class="footer-heading" data-i18n="nav.contact">Operational Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong style="color: #FFFFFF;" data-i18n="contact.hq_title">Tripoli Headquarters</strong>
+                <p style="margin: 0; font-size: 0.85rem;" data-i18n="contact.hq_address">That El Emad Complex, Tower 3, Tripoli, Libya</p>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <a href="tel:+218213608400" style="color: #CBD5E1;">+218 (21) 360-8400</a><br>
+                <a href="tel:+218912204588" style="color: #CBD5E1;">+218 (91) 220-4588</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <a href="mailto:inquiry@jalogroup.ly" style="color: #CBD5E1;">inquiry@jalogroup.ly</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 JALO GROUP FOR OIL & GAS SERVICES. <span data-i18n="footer.rights">All Rights Reserved.</span>
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="certifications.html" data-i18n="cert.noc_sub">NOC Approved Contractor</a>
+          <a href="hse.html" data-i18n="hse.badge">Goal Zero Policy</a>
+          <a href="contact.html" data-i18n="contact.speak_cta">Speak with Team</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Request a Quote Modal -->
+  <div class="modal-backdrop" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="quoteModalTitle">
+          <i class="fa-solid fa-file-invoice"></i>
+          <span data-i18n="quote.modal_title">Request a Technical Service Quote</span>
+        </h3>
+        <button class="modal-close-btn" id="quoteModalCloseBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.5rem;" data-i18n="quote.modal_desc">
+          Submit your operational parameters below. Our engineering dispatch will formulate a formal technical proposal and scope breakdown.
+        </p>
+
+        <form id="quoteForm">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="quoteCompany">
+                <span data-i18n="quote.company">Company / Operating Entity</span>
+                <span class="form-label-req">*</span>
+              </label>
+              <input type="text" id="quoteCompany" class="form-control" placeholder="e.g., Waha Oil Co. / Mellitah" data-i18n-placeholder="quote.company_ph" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="quoteName">
+                <span data-i18n="quote.name">Person in Charge / Title</span>
+                <span class="form-label-req">*</span>
+              </label>
+              <input type="text" id="quoteName" class="form-control" placeholder="Full Name & Title" data-i18n-placeholder="quote.name_ph" required>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="quoteEmail">
+                <span data-i18n="quote.email">Work Email</span>
+                <span class="form-label-req">*</span>
+              </label>
+              <input type="email" id="quoteEmail" class="form-control" placeholder="name@company.ly" data-i18n-placeholder="quote.email_ph" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="quotePhone">
+                <span data-i18n="quote.phone">Phone / WhatsApp</span>
+                <span class="form-label-req">*</span>
+              </label>
+              <input type="tel" id="quotePhone" class="form-control" placeholder="+218 ..." data-i18n-placeholder="quote.phone_ph" required>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="quoteService">
+                <span data-i18n="quote.service">Service Category</span>
+                <span class="form-label-req">*</span>
+              </label>
+              <select id="quoteService" class="form-control" required>
+                <option value="" disabled selected data-i18n="quote.service_select">-- Select Service Category --</option>
+                <option value="Oil & Gas Field Services" data-i18n="service.field.title">Oil & Gas Field Services</option>
+                <option value="Drilling Support Services" data-i18n="service.drilling.title">Drilling Support Services</option>
+                <option value="Well Maintenance & Completion" data-i18n="service.well.title">Well Maintenance & Completion</option>
+                <option value="Mechanical Overhaul & Maintenance" data-i18n="service.mechanical.title">Mechanical Overhaul & Maintenance</option>
+                <option value="Electrical & Power Systems" data-i18n="service.electrical.title">Electrical & Power Systems</option>
+                <option value="Instrumentation, Automation & Control" data-i18n="service.instrumentation.title">Instrumentation, Automation & Control</option>
+                <option value="Engineering & Technical Consultancy" data-i18n="service.engineering.title">Engineering & Technical Consultancy</option>
+                <option value="Procurement & Spare Parts Supply" data-i18n="service.procurement.title">Procurement & Spare Parts Supply</option>
+                <option value="Heavy Equipment & Machinery Rental" data-i18n="service.equipment.title">Heavy Equipment & Machinery Rental</option>
+                <option value="Field Logistics & Heavy Transport" data-i18n="service.logistics.title">Field Logistics & Heavy Transport</option>
+                <option value="Industrial Turnkey Services" data-i18n="service.turnkey.title">Industrial Turnkey Services</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="quoteLocation">
+                <span data-i18n="quote.location">Project Location / Basin</span>
+                <span class="form-label-req">*</span>
+              </label>
+              <input type="text" id="quoteLocation" class="form-control" placeholder="e.g., Sirte Basin / Mellitah" data-i18n-placeholder="quote.location_ph" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="quoteScope">
+              <span data-i18n="quote.scope">Scope Details & Technical Specifications</span>
+              <span class="form-label-req">*</span>
+            </label>
+            <textarea id="quoteScope" class="form-control" placeholder="Please provide project timeline, equipment specifications, or required personnel..." data-i18n-placeholder="quote.scope_ph" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span data-i18n="quote.files">Attach Specification Documents (Simulated)</span>
+            </label>
+            <div class="form-file-box" id="quoteFileBox">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <p id="quoteFileText" style="margin: 0; font-size: 0.88rem; color: var(--text-secondary);" data-i18n="quote.files_hint">
+                Click or drag technical sheets, SOW, or BOQ files (PDF, DWG, XLSX)
+              </p>
+              <input type="file" id="quoteFilesInput" multiple style="display: none;">
+            </div>
+          </div>
+
+          <!-- Structured Payload Panel (Shown on Submit) -->
+          <div class="quote-summary-panel" id="quoteSummaryPanel">
+            <strong style="color: var(--brand-orange); display: flex; align-items: center; gap: 0.5rem;">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="quote.success_title">Quote Request Structured Successfully!</span>
+            </strong>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0.5rem 0;" data-i18n="quote.success_desc">
+              A pre-filled email has been launched for your default email client. You may also copy the structured technical payload below to send via WhatsApp or official portal:
+            </p>
+            <pre class="quote-summary-code" id="quoteSummaryCode"></pre>
+            <button type="button" class="btn btn-navy btn-sm" id="btnCopyQuote" data-i18n="quote.copy">
+              <i class="fa-solid fa-copy"></i> Copy Payload to Clipboard
+            </button>
+          </div>
+
+          <div class="modal-footer" style="padding: 1rem 0 0; background: none; border-top: none;">
+            <button type="button" class="btn btn-outline modal-backdrop-close" data-i18n="quote.close">Close</button>
+            <button type="submit" class="btn btn-primary" id="btnSubmitQuote">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-i18n="quote.submit">Submit Quote Request</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="pmTitle">Project Details</h3>
+        <button class="modal-close-btn" id="projectModalCloseBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div style="height: 240px; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 1.5rem;">
+          <img id="pmImage" src="" alt="Project Visual" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="project-meta-grid" style="margin-bottom: 1.25rem;">
+          <div class="project-meta-item">
+            <span class="project-meta-label" data-i18n="projects.modal_client">Operator / Client</span>
+            <span class="project-meta-val" id="pmClient"></span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label" data-i18n="projects.modal_location">Field Location</span>
+            <span class="project-meta-val" id="pmLocation"></span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label" data-i18n="projects.modal_timeline">Project Timeline</span>
+            <span class="project-meta-val" id="pmTimeline"></span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label" data-i18n="projects.modal_outcome">Milestone & Outcome</span>
+            <span class="project-meta-val" id="pmOutcome"></span>
+          </div>
+        </div>
+        <div style="margin-bottom: 1.25rem;">
+          <strong style="display: block; font-size: 0.88rem; margin-bottom: 0.5rem; text-transform: uppercase; color: var(--text-muted);" data-i18n="projects.modal_scope">Scope of Work</strong>
+          <p id="pmScope" style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary);"></p>
+        </div>
+        <div>
+          <strong style="display: block; font-size: 0.88rem; margin-bottom: 0.5rem; text-transform: uppercase; color: var(--text-muted);" data-i18n="projects.modal_services">Services Deployed</strong>
+          <div id="pmServices" style="display: flex; gap: 0.5rem; flex-wrap: wrap;"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline modal-backdrop-close" data-i18n="quote.close">Close</button>
+        <button class="btn btn-primary btn-open-quote" data-i18n="cta.banner_btn">
+          <i class="fa-solid fa-file-invoice"></i> Inquire About Similar Scope
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main ES Modules Application Script -->
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

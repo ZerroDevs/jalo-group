@@ -1,0 +1,95 @@
+/* ==========================================================================
+   JALO GROUP - Right-to-Left (RTL) Arabic Stylesheet
+   Activated when [dir="rtl"] or html[lang="ar"]
+   ========================================================================== */
+
+[dir="rtl"] {
+  --font-family: var(--font-sans-ar);
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-sans-ar);
+  direction: rtl;
+  text-align: right;
+}
+
+/* Headings and Typography in RTL */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  font-family: var(--font-sans-ar);
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+
+[dir="rtl"] .section-header.text-start {
+  text-align: right;
+}
+
+/* Header & Nav in RTL */
+[dir="rtl"] .nav-link.active::after {
+  left: 0.85rem;
+  right: 0.85rem;
+}
+
+[dir="rtl"] .mobile-drawer {
+  right: auto;
+  left: 0;
+  border-left: none;
+  border-right: 1px solid var(--border-light);
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .mobile-drawer.active {
+  transform: translateX(0);
+}
+
+/* Card & Pillar adjustments */
+[dir="rtl"] .pillar-card {
+  border-left: 1px solid var(--border-light);
+  border-right: 4px solid var(--brand-navy);
+}
+
+[dir="rtl"] .pillar-card:hover {
+  border-right-color: var(--brand-orange);
+}
+
+[dir="rtl"] .footer-heading::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .footer-link:hover {
+  transform: translateX(-3px);
+}
+
+/* Icons & Chevrons flip */
+[dir="rtl"] .fa-arrow-right,
+[dir="rtl"] .fa-chevron-right {
+  transform: scaleX(-1);
+}
+
+/* Project Card Badges */
+[dir="rtl"] .project-card-badge {
+  left: auto;
+  right: 1rem;
+}
+
+/* Modal Footer Alignment */
+[dir="rtl"] .modal-footer {
+  justify-content: flex-start;
+}
+
+/* Form inputs in Arabic */
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+  text-align: right;
+}
+
+[dir="rtl"] .form-label {
+  flex-direction: row;
+}
