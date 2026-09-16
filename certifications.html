@@ -61,22 +61,23 @@
         <a href="about.html" class="nav-link" data-i18n="nav.about">About Us</a>
         <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
         <a href="hse.html" class="nav-link" data-i18n="nav.hse">HSE & Quality</a>
-        <a href="projects.html" class="nav-link" data-i18n="nav.projects">Projects</a>
-        <a href="certifications.html" class="nav-link active" data-i18n="nav.certifications">Certifications</a>
         <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact Us</a>
       </nav>
 
+      <!-- Utility Controls -->
       <div class="header-actions">
-        <button class="btn-control btn-theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
-          <i class="fa-solid fa-moon"></i>
-        </button>
+        <!-- Language Switcher (Compact, accessible) -->
         <button class="btn-control btn-lang-toggle" aria-label="Switch Language" title="Switch Language">
           <i class="fa-solid fa-globe"></i>
           <span class="lang-label">عربي</span>
         </button>
+
+        <!-- CTA Button (Desktop only; hidden on mobile header to prevent clutter) -->
         <button class="btn btn-primary btn-sm btn-open-quote" data-i18n="nav.quote">
-          <i class="fa-solid fa-file-invoice"></i> Request a Quote
+          <i class="fa-solid fa-file-invoice"></i> <span data-i18n="nav.quote">Request a Quote</span>
         </button>
+
+        <!-- Mobile Hamburger Menu Toggle -->
         <button class="btn-mobile-menu" id="mobileMenuToggle" aria-label="Open Mobile Menu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -84,12 +85,14 @@
     </div>
   </header>
 
+  <!-- Mobile Drawer Overlay -->
   <div class="mobile-overlay" id="mobileOverlay"></div>
 
+  <!-- Mobile Navigation Drawer (Phone-First) -->
   <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
     <div class="drawer-header">
       <div class="brand-logo">
-        <img src="assets/images/logo.jpeg" alt="Jalo Group" class="brand-logo-img" style="height: 38px;">
+        <img src="assets/images/logo.jpeg" alt="Jalo Group" class="brand-logo-img" style="height: 36px;">
         <span class="brand-name" style="font-size: 1.15rem;" data-i18n="brand.name">JALO GROUP</span>
       </div>
       <button class="modal-close-btn" id="drawerCloseBtn" aria-label="Close Menu">
@@ -97,29 +100,88 @@
       </button>
     </div>
     <div class="drawer-body">
+      <!-- Prominent Primary Action Button right at top -->
+      <button class="btn btn-primary btn-block btn-open-quote" data-i18n="nav.quote">
+        <i class="fa-solid fa-file-invoice"></i> <span data-i18n="nav.quote">Request a Quote</span>
+      </button>
+
+      <!-- Navigation Links with Chevrons -->
       <nav class="drawer-nav">
-        <a href="index.html" class="drawer-link"><i class="fa-solid fa-house"></i> <span data-i18n="nav.home">Home</span></a>
-        <a href="about.html" class="drawer-link"><i class="fa-solid fa-building"></i> <span data-i18n="nav.about">About Us</span></a>
-        <a href="services.html" class="drawer-link"><i class="fa-solid fa-gears"></i> <span data-i18n="nav.services">Services</span></a>
-        <a href="hse.html" class="drawer-link"><i class="fa-solid fa-shield-halved"></i> <span data-i18n="nav.hse">HSE & Quality</span></a>
-        <a href="projects.html" class="drawer-link"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="nav.projects">Projects</span></a>
-        <a href="certifications.html" class="drawer-link active"><i class="fa-solid fa-certificate"></i> <span data-i18n="nav.certifications">Certifications</span></a>
-        <a href="contact.html" class="drawer-link"><i class="fa-solid fa-headset"></i> <span data-i18n="nav.contact">Contact Us</span></a>
+        <a href="index.html" class="drawer-link">
+          <span class="drawer-link-content">
+            <i class="fa-solid fa-house"></i>
+            <span data-i18n="nav.home">Home</span>
+          </span>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <a href="about.html" class="drawer-link">
+          <span class="drawer-link-content">
+            <i class="fa-solid fa-building"></i>
+            <span data-i18n="nav.about">About Us</span>
+          </span>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <a href="services.html" class="drawer-link">
+          <span class="drawer-link-content">
+            <i class="fa-solid fa-gears"></i>
+            <span data-i18n="nav.services">Services</span>
+          </span>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <a href="hse.html" class="drawer-link">
+          <span class="drawer-link-content">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span data-i18n="nav.hse">HSE & Quality</span>
+          </span>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <a href="projects.html" class="drawer-link">
+          <span class="drawer-link-content">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span data-i18n="nav.projects">Projects</span>
+          </span>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <a href="certifications.html" class="drawer-link active">
+          <span class="drawer-link-content">
+            <i class="fa-solid fa-certificate"></i>
+            <span data-i18n="nav.certifications">Certifications</span>
+          </span>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <a href="contact.html" class="drawer-link">
+          <span class="drawer-link-content">
+            <i class="fa-solid fa-headset"></i>
+            <span data-i18n="nav.contact">Contact Us</span>
+          </span>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
       </nav>
-      <div class="drawer-actions">
-        <button class="btn btn-primary btn-block btn-open-quote" data-i18n="nav.quote">
-          <i class="fa-solid fa-file-invoice"></i> Request a Quote
-        </button>
-        <div style="display: flex; gap: 0.5rem;">
-          <button class="btn-control btn-lang-toggle" style="flex: 1;">
+
+      <!-- Drawer Preferences (Language & Theme) -->
+      <div>
+        <span class="drawer-section-title" data-i18n="footer.preferences">Display & Preferences</span>
+        <div class="drawer-settings-grid">
+          <button class="btn-control btn-lang-toggle" style="width: 100%; justify-content: center;">
             <i class="fa-solid fa-globe"></i>
             <span class="lang-label">عربي</span>
           </button>
-          <button class="btn-control btn-theme-toggle" style="flex: 1;">
+          <button class="btn-control btn-theme-toggle" style="width: 100%; justify-content: center;">
             <i class="fa-solid fa-moon"></i>
-            <span data-i18n="nav.theme_toggle">Theme</span>
+            <span class="theme-label" data-i18n="theme.dark">Dark Mode</span>
           </button>
         </div>
+      </div>
+
+      <!-- Fast Dispatch Link Card -->
+      <div class="drawer-contact-card">
+        <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--brand-orange); font-weight: 700; display: block; margin-bottom: 0.25rem;" data-i18n="topbar.status">Libyan NOC Qualified Vendor</span>
+        <a href="tel:+218213608400" style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
+          <i class="fa-solid fa-phone" style="color: var(--brand-orange);"></i> +218 (21) 360-8400
+        </a>
+        <a href="https://wa.me/218912204588" target="_blank" rel="noopener" class="btn btn-outline btn-sm btn-block" style="border-color: #22C55E; color: #22C55E; font-size: 0.85rem;">
+          <i class="fa-brands fa-whatsapp"></i> <span data-i18n="contact.whatsapp_btn">Chat on WhatsApp</span>
+        </a>
       </div>
     </div>
   </aside>
@@ -306,6 +368,30 @@
         </div>
       </div>
 
+      <!-- Footer Utility Bar (Preferences & Secondary Action Hub) -->
+      <div class="footer-utility-bar">
+        <div class="footer-utility-group">
+          <span class="footer-utility-title" data-i18n="footer.preferences">Display & Preferences:</span>
+          <button class="btn-control btn-theme-toggle" aria-label="Toggle Dark/Light Theme">
+            <i class="fa-solid fa-moon"></i>
+            <span class="theme-label" data-i18n="theme.dark">Dark Mode</span>
+          </button>
+          <button class="btn-control btn-lang-toggle" aria-label="Switch Language">
+            <i class="fa-solid fa-globe"></i>
+            <span class="lang-label">عربي</span>
+          </button>
+        </div>
+        <div class="footer-utility-group">
+          <button class="btn btn-primary btn-sm btn-open-quote" data-i18n="nav.quote">
+            <i class="fa-solid fa-file-invoice"></i> Request a Quote
+          </button>
+          <a href="#" class="btn-control" aria-label="Back to top" title="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span data-i18n="footer.back_to_top">Back to Top</span>
+          </a>
+        </div>
+      </div>
+
       <div class="footer-bottom">
         <div>
           &copy; 2026 JALO GROUP FOR OIL & GAS SERVICES. <span data-i18n="footer.rights">All Rights Reserved.</span>
@@ -337,7 +423,7 @@
         </p>
 
         <form id="quoteForm">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-grid-2">
             <div class="form-group">
               <label class="form-label" for="quoteCompany">
                 <span data-i18n="quote.company">Company / Operating Entity</span>
@@ -355,7 +441,7 @@
             </div>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-grid-2">
             <div class="form-group">
               <label class="form-label" for="quoteEmail">
                 <span data-i18n="quote.email">Work Email</span>
@@ -373,7 +459,7 @@
             </div>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-grid-2">
             <div class="form-group">
               <label class="form-label" for="quoteService">
                 <span data-i18n="quote.service">Service Category</span>

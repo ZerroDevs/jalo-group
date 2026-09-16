@@ -92,6 +92,20 @@ export class I18nEngine {
       btn.setAttribute('aria-label', lang === 'en' ? 'Switch to Arabic' : 'Switch to English');
     });
 
+    // Update Theme Toggle Button Labels based on active language
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    const themeToggles = document.querySelectorAll('.btn-theme-toggle');
+    themeToggles.forEach((btn) => {
+      const labelSpan = btn.querySelector('.theme-label');
+      if (labelSpan) {
+        if (currentTheme === 'dark') {
+          labelSpan.textContent = lang === 'ar' ? 'المظهر الفاتح' : 'Light Mode';
+        } else {
+          labelSpan.textContent = lang === 'ar' ? 'المظهر الداكن' : 'Dark Mode';
+        }
+      }
+    });
+
     // Dispatch global custom event
     window.dispatchEvent(new CustomEvent('jalo:languageChanged', {
       detail: { lang, isRtl }

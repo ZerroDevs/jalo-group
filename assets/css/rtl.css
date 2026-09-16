@@ -47,6 +47,15 @@
   transform: translateX(0);
 }
 
+[dir="rtl"] .drawer-link .drawer-chevron {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .footer-utility-title {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
 /* Card & Pillar adjustments */
 [dir="rtl"] .pillar-card {
   border-left: 1px solid var(--border-light);

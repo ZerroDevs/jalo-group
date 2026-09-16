@@ -20,7 +20,7 @@ export const ar = {
   "nav.theme_toggle": "تبديل المظهر",
 
   // Topbar
-  "topbar.emergency": "دعم العمليات الميدانية 24/7: 8400-360 (21) 218+",
+  "topbar.emergency": "دعم العمليات الميدانية 24/7: 6789-345 (12) 218+",
   "topbar.email": "inquiry@jalogroup.ly",
   "topbar.location": "طرابلس وبنغازي، ليبيا",
   "topbar.status": "مقاول معتمد لدى المؤسسة الوطنية للنفط",
@@ -195,7 +195,7 @@ export const ar = {
   "contact.sirte_title": "المركز اللوجستي — حوض سرت",
   "contact.sirte_address": "محور البريقة ورأس لانوف، الحقول الوسطى، ليبيا",
   "contact.phone_title": "الهاتف المباشر",
-  "contact.phone_val": "8400-360 (21) 218+ / 4588-220 (91) 218+",
+  "contact.phone_val": "6789-345 (12) 218+ / 6789-345 (12) 218+",
   "contact.email_title": "البريد الإلكتروني الرسمي",
   "contact.email_val": "inquiry@jalogroup.ly",
   "contact.whatsapp_title": "التواصل الفوري عبر WhatsApp",
@@ -235,6 +235,10 @@ export const ar = {
   "cta.banner_btn": "طلب عرض سعر فني متكامل",
 
   // Footer
+  "footer.preferences": "خيارات العرض والمظهر",
+  "footer.back_to_top": "للأعلى",
+  "theme.light": "المظهر الفاتح",
+  "theme.dark": "المظهر الداكن",
   "footer.desc": "مجموعة جالو لخدمات النفط والغاز هي شريككم الوطني الموثوق لتقديم الحلول الهندسية، الصيانة المتخصصة، دعم الحفر، واللوجستيات الثقيلة بأعلى معايير الأمان والكفاءة.",
   "footer.quick_links": "روابط سريعة",
   "footer.services_dir": "تخصصات الخدمات",

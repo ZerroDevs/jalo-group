@@ -34,15 +34,23 @@ export class ThemeManager {
     
     // Update Theme Toggle Buttons
     const toggles = document.querySelectorAll('.btn-theme-toggle');
+    const isAr = document.documentElement.getAttribute('lang') === 'ar';
     toggles.forEach((btn) => {
       const icon = btn.querySelector('i');
+      const label = btn.querySelector('.theme-label');
       if (icon) {
         if (theme === 'dark') {
           icon.className = 'fa-solid fa-sun';
-          btn.setAttribute('title', 'Switch to Light Theme');
+          btn.setAttribute('title', isAr ? 'التبديل إلى المظهر الفاتح' : 'Switch to Light Theme');
+          if (label) {
+            label.textContent = isAr ? 'المظهر الفاتح' : 'Light Mode';
+          }
         } else {
           icon.className = 'fa-solid fa-moon';
-          btn.setAttribute('title', 'Switch to Dark Theme');
+          btn.setAttribute('title', isAr ? 'التبديل إلى المظهر الداكن' : 'Switch to Dark Theme');
+          if (label) {
+            label.textContent = isAr ? 'المظهر الداكن' : 'Dark Mode';
+          }
         }
       }
     });

@@ -19,7 +19,7 @@ export const en = {
   "nav.theme_toggle": "Toggle Theme",
 
   // Topbar
-  "topbar.emergency": "24/7 Operations Support: +218 (21) 360-8400",
+  "topbar.emergency": "24/7 Operations Support: +218 (12) 345-6789",
   "topbar.email": "inquiry@jalogroup.ly",
   "topbar.location": "Tripoli, Libya",
   "topbar.status": "Libyan NOC Qualified Vendor",
@@ -194,7 +194,7 @@ export const en = {
   "contact.sirte_title": "Sirte Basin Field Hub",
   "contact.sirte_address": "Brega & Ras Lanuf Logistics Corridor, Libya",
   "contact.phone_title": "Direct Phone Lines",
-  "contact.phone_val": "+218 (21) 360-8400 / +218 (91) 220-4588",
+  "contact.phone_val": "+218 (12) 345-6789 / +218 (12) 345-6789",
   "contact.email_title": "Official Inquiries",
   "contact.email_val": "inquiry@jalogroup.ly",
   "contact.whatsapp_title": "Instant WhatsApp Dispatch",
@@ -234,6 +234,10 @@ export const en = {
   "cta.banner_btn": "Request a Comprehensive Quote",
 
   // Footer
+  "footer.preferences": "Display & Preferences",
+  "footer.back_to_top": "Back to Top",
+  "theme.light": "Light Mode",
+  "theme.dark": "Dark Mode",
   "footer.desc": "Jalo Group for Oil & Gas Services is a premier Libyan oilfield solutions provider, delivering integrated engineering, maintenance, drilling support, and heavy logistics with uncompromising safety and precision.",
   "footer.quick_links": "Quick Navigation",
   "footer.services_dir": "Service Disciplines",

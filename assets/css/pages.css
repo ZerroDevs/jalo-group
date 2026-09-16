@@ -91,6 +91,39 @@
   gap: 1rem;
 }
 
+@media (max-width: 640px) {
+  .hero {
+    min-height: auto;
+  }
+  .hero-container {
+    padding-top: 2.75rem;
+    padding-bottom: 3.25rem;
+  }
+  .hero-tag {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.85rem;
+    margin-bottom: 1rem;
+  }
+  .hero-title {
+    font-size: clamp(1.85rem, 7.5vw, 2.45rem);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+  .hero-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .hero-actions .btn {
+    width: 100%;
+  }
+}
+
 /* Page Header (Inner Pages Hero) */
 .page-header {
   position: relative;
