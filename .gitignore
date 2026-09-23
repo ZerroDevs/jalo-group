@@ -4,3 +4,4 @@ package-lock.json
 package.json
 build.js
 compress.js
+_live_debug.png
