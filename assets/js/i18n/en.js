@@ -19,8 +19,8 @@ export const en = {
   "nav.theme_toggle": "Toggle Theme",
 
   // Topbar
-  "topbar.emergency": "24/7 Operations Support: +218 (12) 345-6789",
-  "topbar.email": "inquiry@jalogroup.ly",
+  "topbar.emergency": "24/7 Operations Support: +218 92 429 5050",
+  "topbar.email": "info@jalogroup.com",
   "topbar.location": "Tripoli, Libya",
   "topbar.status": "Libyan NOC Qualified Vendor",
 
@@ -222,9 +222,9 @@ export const en = {
   "contact.sirte_title": "Sirte Basin Field Hub",
   "contact.sirte_address": "Brega & Ras Lanuf Logistics Corridor, Libya",
   "contact.phone_title": "Direct Phone Lines",
-  "contact.phone_val": "+218 (12) 345-6789 / +218 (12) 345-6789",
+  "contact.phone_val": "+218 92 429 5050 / +218 91 552 0267 / +218 91 614 1616",
   "contact.email_title": "Official Inquiries",
-  "contact.email_val": "inquiry@jalogroup.ly",
+  "contact.email_val": "info@jalogroup.com",
   "contact.whatsapp_title": "Instant WhatsApp Dispatch",
   "contact.whatsapp_btn": "Chat on WhatsApp",
   "contact.hours_title": "Operational Availability",

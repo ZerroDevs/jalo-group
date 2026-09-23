@@ -143,7 +143,7 @@ Date: ${dateStr}
    - Documents: ${fileNames}
 =============================================================
 Transmitted via Jalo Group Enterprise Portal (Libya)
-Contact: inquiry@jalogroup.ly | 24/7 Operations: +218 (21) 360-8400
+Contact: info@jalogroup.com | 24/7 Operations: +218 92 429 5050 / +218 91 552 0267 / +218 91 614 1616
 =============================================================`;
 
       // Display on-screen summary panel
@@ -156,7 +156,7 @@ Contact: inquiry@jalogroup.ly | 24/7 Operations: +218 (21) 360-8400
       // Format RFC mailto link
       const subject = encodeURIComponent(`[RFP / Quote Inquiry] ${service} - ${company}`);
       const body = encodeURIComponent(payloadText);
-      const mailtoUrl = `mailto:inquiry@jalogroup.ly?subject=${subject}&body=${body}`;
+      const mailtoUrl = `mailto:info@jalogroup.com?subject=${subject}&body=${body}`;
 
       // Trigger mailto client
       setTimeout(() => {

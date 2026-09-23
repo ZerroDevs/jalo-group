@@ -20,8 +20,8 @@ export const ar = {
   "nav.theme_toggle": "تبديل المظهر",
 
   // Topbar
-  "topbar.emergency": "دعم العمليات الميدانية 24/7: 6789-345 (12) 218+",
-  "topbar.email": "inquiry@jalogroup.ly",
+  "topbar.emergency": "دعم العمليات الميدانية 24/7: ‎+218 92 429 5050‎",
+  "topbar.email": "info@jalogroup.com",
   "topbar.location": "طرابلس وبنغازي، ليبيا",
   "topbar.status": "مقاول معتمد لدى المؤسسة الوطنية للنفط",
 
@@ -223,9 +223,9 @@ export const ar = {
   "contact.sirte_title": "المركز اللوجستي — حوض سرت",
   "contact.sirte_address": "محور البريقة ورأس لانوف، الحقول الوسطى، ليبيا",
   "contact.phone_title": "الهاتف المباشر",
-  "contact.phone_val": "6789-345 (12) 218+ / 6789-345 (12) 218+",
+  "contact.phone_val": "‎+218 92 429 5050‎ / ‎+218 91 552 0267‎ / ‎+218 91 614 1616‎",
   "contact.email_title": "البريد الإلكتروني الرسمي",
-  "contact.email_val": "inquiry@jalogroup.ly",
+  "contact.email_val": "info@jalogroup.com",
   "contact.whatsapp_title": "التواصل الفوري عبر WhatsApp",
   "contact.whatsapp_btn": "مراسلة عبر واتساب",
   "contact.hours_title": "ساعات العمل الميداني",

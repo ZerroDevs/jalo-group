@@ -106,7 +106,7 @@ The platform's palette is directly derived from the official **Jalo Group** corp
 - Invoked globally from the header CTA, footer utility bar, page hero sections, or directly from any service card.
 - Automatically pre-selects the relevant service discipline when triggered from a card (e.g., Well Testing, Pipeline Pigging, Slickline).
 - Client-side validation for: Operator Company Name, Contact Person, Corporate Email, Libyan Phone, Operating Basin, and Scope of Work.
-- Generates an **RFC-compliant structured `mailto:` link** addressed to `inquiry@jalogroup.ly` with prefilled technical parameters.
+- Generates an **RFC-compliant structured `mailto:` link** addressed to `info@jalogroup.com` with prefilled technical parameters.
 - Built-in preview panel with a **1-click "Copy Payload to Clipboard"** button for easy pasting into WhatsApp, procurement portals, or official dispatch letters.
 
 ### 2. Interactive Basin & Project Filtering System
