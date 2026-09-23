@@ -2,8 +2,12 @@
    JALO GROUP - Base Styles, Typography & Resets
    ========================================================================== */
 
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+/* NOTE: Google Fonts are loaded per page through the <link rel="stylesheet"> tag in each
+   HTML <head>. Do NOT re-add an @import for them here: clean-css (used by build.js) cannot
+   parse remote @import URLs containing semicolons (e.g. "wght@400;500;600;700;800"). It then
+   swallows the universal selector of the next rule, so `*, *::before, *::after { margin: 0 }`
+   is minified to `::after,::before { margin: 0 }` and the browser's default `body { margin: 8px }`
+   comes back - which shows up as a light frame around the whole published site. */
 
 /* Box Sizing & Root Resets */
 *, *::before, *::after {
