@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    JALO GROUP - Arabic (AR) Translation Dictionary
    High-Caliber Libyan Oil & Gas Enterprise Terminology
    Strict Zero-Emojis Policy
@@ -217,7 +217,7 @@ export const ar = {
   "contact.title": "تواصل مع مجموعة جالو (JALO GROUP)",
   "contact.subtitle": "فريقنا الهندسي والعملياتي متاح على مدار الساعة لبحث متطلبات مشاريعكم والرد على طلبات الطوارئ وتنسيق الأعمال الميدانية.",
   "contact.hq_title": "المقر الرئيسي — طرابلس",
-  "contact.hq_address": "مجمع ذات العماد، برج 3، الدور 8، طرابلس، ليبيا",
+  "contact.hq_address": "عين زارة، طرابلس، ليبيا",
   "contact.benghazi_title": "مركز العمليات ",
   "contact.benghazi_address": "منطقة الكيش، القطاع التجاري والصناعي، ليبيا",
   "contact.sirte_title": "المركز اللوجستي — حوض سرت",

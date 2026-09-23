@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    JALO GROUP - English (EN) Translation Dictionary
    Primary Default Language
    ========================================================================== */
@@ -216,7 +216,7 @@ export const en = {
   "contact.title": "Connect with JALO GROUP",
   "contact.subtitle": "Our engineering and operational coordinators are ready 24/7 to discuss project requirements, emergency call-outs, and long-term service contracts.",
   "contact.hq_title": "Tripoli Headquarters",
-  "contact.hq_address": "That El Emad Complex, Tower 3, Suite 802, Tripoli, Libya",
+  "contact.hq_address": "AinZara, Tripoli, Libya",
   "contact.benghazi_title": "Tripoli Operations Center",
   "contact.benghazi_address": "Al-Kish Industrial District, Commercial Sector, Libya",
   "contact.sirte_title": "Sirte Basin Field Hub",
